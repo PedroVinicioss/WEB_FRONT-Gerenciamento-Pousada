@@ -1,0 +1,218 @@
+/* Layout principal */
+.genericpage {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: 325px 1fr 325px;
+  gap: 20px;
+  padding: 10px;
+  height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Coluna da esquerda */
+.leftcolumn {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leftcolumn h2 {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.headerlinks {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.headerlinks a {
+  text-decoration: none;
+  color: #0091ae;
+  /* font-weight: 500; */
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.profileHeader {
+  text-align: center;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: #ccc 1px solid;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.avatar {
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.profileHeader h2 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.profileHeader .email {
+  font-size: 14px;
+  color: #555;
+  white-space: normal; /* Permite quebra de linha */
+  word-break: break-word; /* Garante que textos longos quebrem em palavras */
+  line-height: 1.4; /* Ajusta o espaçamento entre as linhas */
+}
+
+/* Coluna central */
+.centercolumn {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Scroll se o conteúdo for longo */
+}
+
+.highlights {
+  /* background: white; */
+  padding: 15px;
+  border-bottom: #ccc 1px solid;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.header {
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.titlecenter {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.settingsButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.settingsIcon {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #516f90;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+/* Coluna da direita */
+.rightcolumn {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.relateditem {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.relateditem p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .generic-page {
+    grid-template-columns: 1fr; /* Colunas em linha única */
+  }
+  .left-column,
+  .center-column,
+  .right-column {
+    margin-bottom: 20px;
+  }
+}
+
+/* body {
+    background-color: #555;
+} */
+
+.leftcolumn,
+.centercolumn,
+.rightcolumn { 
+  /* height: 100%; */
+  overflow-y: auto;
+}
+
+/* Estilo geral da scrollbar */
+.leftcolumn::-webkit-scrollbar,
+.centercolumn::-webkit-scrollbar,
+.rightcolumn::-webkit-scrollbar {
+  width: 8px; /* Largura da barra vertical */
+  height: 8px; /* Altura da barra horizontal */
+}
+
+/* Estilo para navegadores Firefox */
+.leftcolumn,
+.centercolumn,
+.rightcolumn {
+  scrollbar-width: thin; /* Largura fina da barra */
+}
+

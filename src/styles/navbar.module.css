@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /* background-color: #07a1ac; */
+    background-color: #07a1ac;
+    min-block-size: 75px;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    margin-right: 1rem;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #00eeff;
+    font-weight: bold;
+}
+
+.imglogo {
+    height: 75px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}

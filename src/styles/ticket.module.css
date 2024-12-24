@@ -1,0 +1,42 @@
+.ticket {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .ticketHeader a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .ticketHeader a:hover {
+    cursor: pointer;
+    color: #0091ae;
+    text-decoration: underline;
+  }
+  
+  .ticketBody p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .ticketBody .label {
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  .ticketBody .value {
+    color: #0091ae;
+  }
+  
+  

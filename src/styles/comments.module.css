@@ -1,0 +1,51 @@
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%; /* Garante que o contêiner não ultrapasse o espaço disponível */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  }
+  
+  .commentInput {
+    max-width: 100%; /* Garante que não ultrapasse o contêiner */
+    min-height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none; /* Remove o redimensionamento manual */
+    outline: none;
+  }
+  
+  .commentInput:focus {
+    border-color: #0091ae;
+    box-shadow: 0 0 3px rgba(0, 145, 174, 0.5);
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    max-width: 100%; /* Garante que os botões fiquem dentro do layout */
+  }
+  
+  .saveButton,
+  .cancelButton {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .saveButton {
+    background-color: #0091ae;
+    color: white;
+  }
+  
+  .cancelButton {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  

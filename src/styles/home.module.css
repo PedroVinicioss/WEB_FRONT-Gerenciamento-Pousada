@@ -1,0 +1,36 @@
+.infodiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.imginfo {
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.textinfo {
+    width: 500px;
+    margin-left: 20px;
+    /* background-color: aqua; */
+    margin-top: 150px;
+    height: 100%;
+}
+
+.textinfo h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.textinfo p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+

@@ -1,0 +1,59 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 1500px; /* Define um limite de largura opcional */
+    margin: 0 auto; /* Centraliza o container */
+    box-sizing: border-box;
+}
+
+.inputBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table thead {
+    background-color: rgb(245, 248, 250);
+}
+
+.table tr {
+    font-size: 14px;
+}
+
+.columnName {
+    color: #0091ae;
+    font-weight: 600;
+}
+
+.columnName a {
+    color: #0091ae;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.columnName a:hover {
+    color: #005f6b;
+}

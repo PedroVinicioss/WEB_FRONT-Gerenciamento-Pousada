@@ -1,0 +1,95 @@
+/* Contêiner principal dos quartos */
+.quartos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 20px; /* Espaçamento entre os cartões */
+    padding: 20px;
+}
+
+/* Estilo do card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaço entre conteúdo e botão */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 500px; /* Altura fixa para todos os cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Imagem do card */
+.cardimage {
+    width: 100%;
+    height: 250px; /* Altura fixa da imagem */
+    object-fit: cover; /* Ajusta a imagem ao tamanho sem distorcer */
+    border-bottom: 2px solid #0091ae;
+}
+
+/* Corpo do card */
+.cardbody {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Organiza conteúdo verticalmente */
+    flex-grow: 1;
+}
+
+/* Título do card */
+.cardtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0091ae;
+    margin-bottom: 10px;
+}
+
+/* Texto do card */
+.cardtext {
+    font-size: 16px;
+    color: #444444;
+    flex-grow: 1; /* Faz o texto expandir para ocupar espaço */
+    overflow: hidden; /* Oculta conteúdo extra */
+    text-overflow: ellipsis; /* Adiciona "..." ao cortar texto */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limita a 3 linhas */
+    -webkit-box-orient: vertical;
+}
+
+/* Hover no card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0091ae;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover no botão */
+.btn:hover {
+    background-color: #005f6b;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .quartos {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .quartos {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+}
