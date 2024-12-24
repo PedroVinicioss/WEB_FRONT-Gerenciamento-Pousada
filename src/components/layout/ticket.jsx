@@ -3,7 +3,7 @@ import styles from "../../styles/ticket.module.css";
 import { Link } from "react-router-dom";
 
 const Ticket = ({ data, type }) => {
-  let name = type === "reservas" ? "Reserva" : "Dependente";
+  let name = type === "reservas" ? "Reserva" :  type === "dependentes" ? "Dependente" : "Cliente";
   let id = data["ID"] || data["id"];
   name = name + " - " + id;
   // Renderiza dinamicamente os campos com base nos dados fornecidos

@@ -88,6 +88,7 @@
   white-space: normal; /* Permite quebra de linha */
   word-break: break-word; /* Garante que textos longos quebrem em palavras */
   line-height: 1.4; /* Ajusta o espaçamento entre as linhas */
+  text-align: start;
 }
 
 /* Coluna central */
